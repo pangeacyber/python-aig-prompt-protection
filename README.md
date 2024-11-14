@@ -1,7 +1,7 @@
 # AI Guard Prompt Protection in Python
 
 An example Python app that demonstrates how to use Pangea's [AI Guard][] service
-to capture and filter what users are sending to LLMs.
+to identify and filter Personally Identifiable Information that users may send to LLMs.
 
 ## Prerequisites
 
