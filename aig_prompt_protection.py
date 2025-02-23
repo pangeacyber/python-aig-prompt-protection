@@ -45,7 +45,7 @@ def main(
     # Guard the prompt before sending it to the LLM.
     guarded = ai_guard.guard_text(prompt)
     assert guarded.result
-    redacted_prompt = guarded.result.redacted_prompt or prompt
+    redacted_prompt = guarded.result.prompt_text or prompt
 
     # Generate chat completions.
     stream = OpenAI(api_key=openai_api_key).chat.completions.create(
